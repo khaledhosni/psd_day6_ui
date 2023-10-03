@@ -10,6 +10,7 @@ void main() async {
   final themeStr = await rootBundle.loadString('assets/app_theme.json');
   final themeJson = jsonDecode(themeStr);
   final theme = ThemeDecoder.decodeThemeData(themeJson)!;
+
   runApp(MyApp(theme));
 }
 
